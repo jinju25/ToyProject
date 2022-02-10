@@ -1,1 +1,11 @@
-default.css (파일에 전체적으로 영향이 가는 css 코드)
+body{
+  background-color: pink;
+}
+
+h1{
+  font-family: 'Jua', sans-serif;
+}
+
+p{
+  font-family: 'Jua', sans-serif;
+}
