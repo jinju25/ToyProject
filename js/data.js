@@ -1,26 +1,26 @@
 const qnaList = [
   {
-    q: '1. 연인이 친구의 깻잎을 떼 줄때 당신의 반응 ?',
+    q: '1. 연인이 친구의 깻잎을 떼줄 때 당신의 반응 ?',
     a: [
-      { answer: 'a. 아무 상관 없다', type: ['cow', 'tiger', 'dragon', 'chick'] },
-      { answer: 'b. 화가 난다', type: ['mouse', 'rabbit', 'horse', 'snake', 'dog', 'monkey'] },
-      { answer: 'c. 난 잘 모르겠어..', type: ['sheep', 'pig' ] },
+      { answer: 'a. 아무 상관 없다', type: ['아메리칸 스타일'] },
+      { answer: 'b. 좀 신경쓰이지만 넘어간다', type: ['보통'] },
+      { answer: 'c. 용서할 수 없다', type: ['유교걸'] },
     ]
   },
   {
-    q: '2. 좋아하는 사람이 생겨 연락하고자 한다 ',
+    q: '2. 내 친구가 롱패딩 지퍼를 못 올려서 끙끙대고 있다. <br> 만약 내 연인이 친구의 지퍼를 올려준다면?',
     a: [
-      { answer: 'a. 바로 먼저 연락한다.', type: ['mouse', 'rabbit', 'tiger', 'monkey'] },
-      { answer: 'b. 언제 연락할지, 어떻게 말할지 심사숙고하여 연락한다.', type: ['cow', 'horse', 'snake', 'dog'] },
-      { answer: 'c. 상대방에게 먼저 연락 올 때까지 기다린다.', type: ['sheep', 'dragon', 'chick', 'pig'] },
+      { answer: 'a. 아무 상관 없다', type: ['아메리칸 스타일'] },
+      { answer: 'b. 좀 신경쓰이지만 넘어간다', type: ['보통'] },
+      { answer: 'c. 용서할 수 없다', type: ['유교걸'] },
     ]
   },
   {
-    q: '3. 당신의 고백 스타일은?',
+    q: '3. 연인이 친구들과 남자 여자 2:2로 1박2일 여행을 가도 되냐고 묻는다. 당신의 반응은?',
     a: [
-      { answer: 'a. 호감이 보이면 바로 고백한다', type: ['cow', 'rabbit', 'tiger', 'dog', 'monkey'] },
-      { answer: 'b. 상대방이 고백할 때까지 기다린다', type: ['sheep', 'chick', 'pig'] },
-      { answer: 'c. 완벽한 분위기, 완벽한 타이밍에서 고백한다.', type: ['mouse', 'horse', 'snake', 'dragon'] }
+      { answer: 'a. 다녀와 쿨하게 보내준다', type: ['아메리칸 스타일'] },
+      { answer: 'b. 좀 신경쓰이지만 어릴때 부터 친구라고 하니 보내준다', type: ['보통'] },
+      { answer: 'c. 보내줄 수 없다.', type: ['유교걸'] },
     ]
   },
   {
