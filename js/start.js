@@ -1,7 +1,25 @@
 const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
+const result = document.querySelector("#result");
+const endPoint = 7;
+const select = [];
 
-function addAnswer(answerText, qIdx){
+function goResult() {
+  qna.style.WebkitAnimation = "fadeOut 1s";
+  qna.style.animation = "fadeOut 1s";
+  setTimeout(() => {
+    result.style.WebkitAnimation = "fadeIn 1s";
+    result.style.animation = "fadeIn 1s";
+    setTimeout(() => {
+      qna.style.display = "none";
+      result.style.display = "block";
+    }, 450)})
+
+    console.log(select);
+
+  }
+
+function addAnswer(answerText, qIdx, idx){
   var a = document.querySelector('.answerBox');
   var answer = document.createElement('button'); //button을 createElement를 통해 만듦
   answer.classList.add('answerList');
@@ -21,6 +39,7 @@ function addAnswer(answerText, qIdx){
       children[i].style.animation = "fadeOut 0.5s";
     }
     setTimeout(() => {
+      select[qIdx] = idx;
       for(let i = 0; i < children.length; i++){
         children[i].style.display = 'none';
       }
@@ -29,11 +48,18 @@ function addAnswer(answerText, qIdx){
   }, false);
 }
 function goNext(qIdx) {
+  if(qIdx === endPoint){
+    goResult();
+    return;
+  }
+
   var q = document.querySelector('.qBox');
   q.innerHTML = qnaList[qIdx].q;
   for(let i in qnaList[qIdx].a){
-    addAnswer(qnaList[qIdx].a[i].answer, qIdx);
+    addAnswer(qnaList[qIdx].a[i].answer, qIdx, i);
   }
+  var status = document.querySelector('.statusBar');
+  status.style.width = (100/endPoint) * (qIdx+1) + '%';
 }
 
 function begin(){

@@ -13,25 +13,34 @@
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/qna.css">
   <link rel="stylesheet" href="./css/animation.css">
+  <link rel="stylesheet" href="./css/result.css">
 </head>
 
 <body>
   <div class="container">
-    <section id="main" class="mx-auto mt-5 py-5 px-3">
-      <h1>아메리칸 테스트</h1>
+    <section id="main" class="mx-auto my-5 py-5 px-3">
+      <h1>유교력 테스트</h1>
 
       <div class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
         <img src="./img/main.png" alt="mainImage" class="img-fluid">
       </div>
 
       <p>
-        나는 얼마나 개방적일까?<br>
+        당신의 유교력은 몇 점?<br>
         아래 시작하기 버튼을 눌러 시작하세요
       </p>
       <button type="button" class="btn btn-outline-danger mt-3" onclick="js:begin()">시작하기</button>
     </section>
 
+
+
+
     <section id="qna">
+      <div class="status mx-auto mt-3">
+        <div class="statusBar">
+
+        </div>
+      </div>
       <div class="qBox my-5 py-3 mx-auto">
 
       </div>
@@ -40,8 +49,26 @@
       </div>
     </section>
 
+
+
+
+
+
     <section id="result">
+      <h1>당신의 결과는?</h1>
+      <div class="resultname">
+
+      </div>
+      <div id="resultImg" class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+
+      </div>
+      <div class="resultDesc">
+
+      </div>
+      <button type="button">공유하기</button>
     </section>
+
+
     <script src="./js/data.js" charset="utf-8"></script>
     <script src="./js/start.js" charset="utf-8"></script>
 
