@@ -1,7 +1,7 @@
 const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
 const result = document.querySelector("#result");
-const endPoint = 7;
+const endPoint = 6;
 const select = [];
 
 function goResult() {
@@ -55,6 +55,12 @@ function goNext(qIdx) {
 
   var q = document.querySelector('.qBox');
   q.innerHTML = qnaList[qIdx].q;
+
+  var qimg = document.querySelector('.questionImg');
+  var qnaURL = './img/';
+  qimg.src= qnaURL + (qIdx+1) + '.png';
+
+
   for(let i in qnaList[qIdx].a){
     addAnswer(qnaList[qIdx].a[i].answer, qIdx, i);
   }
